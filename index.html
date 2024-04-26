@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+
+<body class="bg">
+    <!-- //Heading -->
+    <div class="heading">
+        <h1>CALCULATOR</h1>
+    </div>
+    <div class="parentCal">
+        <!-- //Display -->
+        <div class="inputDisplay">
+            <input type="text" name="" id="inputField" disabled>
+        </div>
+        <!-- //Cal Buttons & Symbols -->
+      
+            <table class="table">
+                <tr>
+                    <td onclick="allClear()" class="alphaClr">D</td>
+                    <td onclick="addValue('%')"  class="alphaClr">%</td>
+                    <td onclick="addValue('/')" class="alphaClr">/</td>
+                    <td onclick="addValue('-')" class="symClr">-</td>
+                </tr>
+                <tr>
+                    <td onclick="addValue(7)" class="NumClr">7</td>
+                    <td onclick="addValue(8)" class="NumClr">8</td>
+                    <td onclick="addValue(9)" class="NumClr">9</td>
+                    <td onclick="addValue('+')" class="symClr">+</td>
+                </tr>
+                <tr>
+                    <td onclick="addValue(4)" class="NumClr">4</td>
+                    <td onclick="addValue(5)" class="NumClr">5</td>
+                    <td onclick="addValue(6)" class="NumClr">6</td>
+                    <td onclick="addValue('*')"  class="symClr">x</td>
+                </tr>
+                <tr>
+                    <td onclick="addValue(1)" class="NumClr">1</td>
+                    <td onclick="addValue(2)" class="NumClr">2</td>
+                    <td onclick="addValue(3)" class="NumClr">3</td>
+                    <td onclick="result()"  class="evalClr" rowspan="2" >=</td>
+
+                </tr>
+                <tr>
+                    <td onclick="addValue(0)" class="NumClr">0</td>
+                    <td onclick="addValue('.')" class="NumClr">.</td>   
+                    <td onclick="singleClear()" class="NumClr">C</td>
+                  
+                </tr>
+            </table>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
